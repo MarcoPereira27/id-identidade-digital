@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Cabin;
+  src: url(Cabin-Bold.ttf);
+}
+
+:root {
+  --primary-color: #033233;
+}
+
+body {
+  cursor: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  width: 100vw;
+  height: 16vh;
+}
+
+nav h1 {
+  font-family: "Cabin", sans-serif;
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+nav .nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav .nav-items a {
+  cursor: none;
+  font-family: "Cabin", sans-serif;
+  text-decoration: none;
+  padding-left: 3rem;
+  color: var(--primary-color);
+}
+
+/* Cursor */
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 3s infinite alternate;
+}
+
+.cursor::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -10px;
+  left: -10px;
+  animation: cursorAnim2 3s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid var(--primary-color);
+}
