@@ -129,6 +129,6 @@ const update = () => {
 
 requestAnimationFrame(update);
 
-setInterval(function() {
-  console.log(esp);
-}, 500);
+// setInterval(function() {
+//   console.log(esp);
+// }, 500);

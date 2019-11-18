@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,600,700|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/estilos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+    <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <title>ID</title>
   </head>
   <style>
@@ -31,16 +37,33 @@
     <div class="cursor"></div>
     <canvas id="canvas" width="1366px" height="768px"></canvas>
 
+    <div id="canvas-overlay">identidade digital</div>
+
     <nav>
       <h1>ID</h1>
       <div class="nav-items">
-        <a href="#">SOBRE</a>
+        <a href="#about-container">SOBRE</a>
         <a href="#">SERVIÇOS</a>
         <a href="#">CONTACTOS</a>
       </div>
     </nav>
 
+    <div id="about-container">
+      <h2 class="about-item">Quem somos?</h2>
+      <p class="about-item">
+        Uma empresa, ainda jovem, com presença já bem marcada na região de
+        Aveiro, que presta serviços de apoio aos seus clientes, na área da
+        impressão digital, na encadernação, na publicidade diversa, que vai
+        desde o simples flyer, ao catalogo, ou lona outdoor mais marcante. O
+        Know how adquirido ao longo do tempo fez-nos perceber que solução para
+        cada situação. Trabalhamos sempre a pensar na melhor forma de o dar a
+        conhecer a si e aos outros. A pensar nisso mesmo, id-identidadedigital
+        está ao seu dispor para lhe apresentar a proposta adequada.
+      </p>
+    </div>
+
     <script src="js/main.js"></script>
     <script src="js/cursor.js"></script>
+    <script src="js/animation.js"></script>
   </body>
 </html>

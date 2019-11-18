@@ -1,14 +1,16 @@
-@font-face {
-  font-family: Cabin;
-  src: url(font/Cabin-Bold.ttf);
-}
-
 :root {
   --primary-color: #033233;
+  --primary-font: "Cabin", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   cursor: none;
+  font-family: var(--primary-font);
 }
 
 nav {
@@ -22,7 +24,7 @@ nav {
 }
 
 nav h1 {
-  font-family: "Cabin", sans-serif;
+  font-family: var(--primary-font);
   color: var(--primary-color);
   font-size: 3rem;
 }
@@ -35,10 +37,21 @@ nav .nav-items {
 
 nav .nav-items a {
   cursor: none;
-  font-family: "Cabin", sans-serif;
+  font-family: var(--primary-font);
   text-decoration: none;
   padding-left: 3rem;
   color: var(--primary-color);
+}
+
+#canvas-overlay {
+  position: absolute;
+  background-color: rgba(3, 50, 51, 0.9);
+  top: 45vh;
+  left: 31%;
+  color: #fff;
+  font-size: 3rem;
+  padding: 1rem 5rem;
+  border-radius: 0.3rem;
 }
 
 /* Cursor */
@@ -51,6 +64,7 @@ nav .nav-items a {
   transition-duration: 100ms;
   transition-timing-function: ease-out;
   animation: cursorAnim 3s infinite alternate;
+  pointer-events: none;
 }
 
 .cursor::after {
@@ -98,4 +112,25 @@ nav .nav-items a {
 .expand {
   animation: cursorAnim3 0.5s forwards;
   border: 1px solid var(--primary-color);
+}
+
+/* About */
+#about-container {
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  padding: 0 10rem;
+  text-align: center;
+}
+
+#about-container h2 {
+  margin-bottom: 3rem;
+}
+
+.about-time {
+  opacity: 1;
 }
