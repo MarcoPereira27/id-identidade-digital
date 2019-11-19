@@ -28,6 +28,7 @@
       /* Mudar isto para 100 depois */
       height: auto;
       overflow-x: hidden;
+      overflow-y: hidden;
     }
 
     canvas {
@@ -43,14 +44,15 @@
     <div id="canvas-overlay">identidade digital</div>
 
     <nav>
-      <h1>ID</h1>
+      <a href="#top"><h1>ID</h1></a>
       <div class="nav-items">
         <a href="#about-container">SOBRE</a>
-        <a href="#">SERVIÇOS</a>
+        <a href="#services-container">SERVIÇOS</a>
         <a href="#">CONTACTOS</a>
       </div>
     </nav>
 
+    <!-- About -->
     <div id="about-container">
       <h2 class="about-item">Quem somos?</h2>
       <p class="about-item">
@@ -63,6 +65,57 @@
         conhecer a si e aos outros. A pensar nisso mesmo, id-identidadedigital
         está ao seu dispor para lhe apresentar a proposta adequada.
       </p>
+    </div>
+
+    <!-- Serviços -->
+    <div id="services-container">
+      <div id="services-bg">
+        <img src="img/printer.jpg" alt="printer" />
+      </div>
+      <div id="services-card">
+        <div class="card" id="card-1">
+          <div>
+            <h3>SOLUÇÕES DE IMPRESSÃO</h3>
+          </div>
+          <div>
+            <img src="img/printer.png" alt="printer" />
+          </div>
+          <div>
+            <p>
+              Impressão em papel, vinil, placas PVC, placas Alveolar, lonas e
+              acrílicos
+            </p>
+          </div>
+        </div>
+        <div class="card" id="card-2">
+          <div>
+            <h3>EXECUÇÃO E ACABAMENTOS</h3>
+          </div>
+          <div>
+            <img src="img/book.png" alt="book" />
+          </div>
+          <div>
+            <p>
+              Execução de encadernações, revistas, montras em vinil, rotução de
+              viaturas, serviços de brindes, troféus e carimbos.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="card-3">
+          <div>
+            <h3>PERSONALIZAÇÃO DE ROUPA</h3>
+          </div>
+          <div>
+            <img src="img/shirt.png" alt="shirt" />
+          </div>
+          <div>
+            <p>
+              Processo de estampagem por Flex Recorte, Flex de Impressão ou
+              Transfer.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/main.js"></script>
