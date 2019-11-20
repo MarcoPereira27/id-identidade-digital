@@ -63,9 +63,9 @@ nav .nav-items a {
 
 /* Cursor */
 .cursor {
-  width: 30px;
-  height: 30px;
-  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  /* border: 2px solid #fff; */
   border-radius: 50%;
   position: absolute;
   transition-duration: 100ms;
@@ -73,18 +73,19 @@ nav .nav-items a {
   animation: cursorAnim 3s infinite alternate;
   pointer-events: none;
   z-index: 20;
+  backdrop-filter: invert(100%);
 }
 
 .cursor::after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   border: 8px solid gray;
   border-radius: 50%;
   opacity: 0.5;
-  top: -10px;
-  left: -10px;
+  top: -8px;
+  left: -8px;
   animation: cursorAnim2 3s infinite alternate;
 }
 
@@ -213,5 +214,92 @@ nav .nav-items a {
 }
 
 .card div:nth-child(3) p {
+  font-family: var(--secondary-font);
+}
+
+/* Contact Us */
+#contact-container {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-form {
+  width: 70vw;
+  height: 70vh;
+  padding: 0 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 3fr 2fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+#form-title {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 2;
+}
+
+#contact-form input {
+  height: 45%;
+  width: 95%;
+  border: var(--primary-color) 2px solid;
+  font-family: var(--secondary-font);
+  padding: 0 1rem;
+  cursor: none;
+}
+
+#form-mensagem {
+  grid-column: span 2;
+  width: 98%;
+  height: 100%;
+  resize: none;
+  border: var(--primary-color) 2px solid;
+  font-family: var(--secondary-font);
+  padding: 1rem;
+  cursor: none;
+}
+
+#contact-submit-btn {
+  grid-column: span 2;
+  background: #fff;
+  border: var(--primary-color) 2px solid;
+  padding: 0.8rem 5rem;
+  border-radius: 1rem;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  cursor: none;
+}
+
+/* Encontre-nos */
+
+#find-container {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 16vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 87% 13%;
+}
+
+#contact-info {
+  background: var(--primary-color);
+}
+
+#footer {
+  grid-column: span 2;
+  background: var(--primary-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--secondary-font);
 }
