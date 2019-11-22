@@ -70,7 +70,6 @@ nav .nav-items a {
   position: absolute;
   transition-duration: 100ms;
   transition-timing-function: ease-out;
-  animation: cursorAnim 3s infinite alternate;
   pointer-events: none;
   z-index: 20;
   backdrop-filter: invert(100%);
@@ -89,14 +88,6 @@ nav .nav-items a {
   animation: cursorAnim2 3s infinite alternate;
 }
 
-@keyframes cursorAnim {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.8);
-  }
-}
 @keyframes cursorAnim2 {
   from {
     transform: scale(1);
@@ -292,6 +283,26 @@ nav .nav-items a {
 
 #contact-info {
   background: var(--primary-color);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 2rem;
+}
+
+#contact-info p {
+  font-family: var(--secondary-font);
+  font-size: 0.8rem;
+}
+
+#contact-info h4 {
+  font-family: var(--primary-font);
+}
+
+.social-media-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-top: 0.5rem;
 }
 
 #footer {
