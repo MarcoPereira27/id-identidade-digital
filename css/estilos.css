@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgb(3, 50, 51);
-  --primary-font: "Cabin", sans-serif;
-  --secondary-font: "Open Sans", sans-serif;
+  --primary-font: 'Cabin', sans-serif;
+  --secondary-font: 'Open Sans', sans-serif;
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  cursor: none;
+  /* cursor: none; */
   font-family: var(--primary-font);
 }
 
@@ -27,7 +27,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  cursor: none;
+  /* cursor: none; */
 }
 
 nav h1 {
@@ -43,7 +43,7 @@ nav .nav-items {
 }
 
 nav .nav-items a {
-  cursor: none;
+  /* cursor: none; */
   font-family: var(--primary-font);
   text-decoration: none;
   padding-left: 3rem;
@@ -72,10 +72,10 @@ nav .nav-items a {
 }
 
 /* Cursor */
-.cursor {
+/* .cursor {
   width: 40px;
   height: 40px;
-  /* border: 2px solid #fff; */
+  border: 2px solid #fff;
   border-radius: 50%;
   position: absolute;
   transition-duration: 100ms;
@@ -96,7 +96,7 @@ nav .nav-items a {
   top: -8px;
   left: -8px;
   animation: cursorAnim2 3s infinite alternate;
-}
+} */
 
 .expand {
   animation: cursorAnim3 0.5s forwards;
@@ -254,7 +254,7 @@ nav .nav-items a {
   border: var(--primary-color) 2px solid;
   font-family: var(--secondary-font);
   padding: 0 1rem;
-  cursor: none;
+  /* cursor: none; */
 }
 
 #form-mensagem {
@@ -265,7 +265,7 @@ nav .nav-items a {
   border: var(--primary-color) 2px solid;
   font-family: var(--secondary-font);
   padding: 1rem;
-  cursor: none;
+  /* cursor: none; */
 }
 
 #contact-submit-btn {
@@ -277,7 +277,7 @@ nav .nav-items a {
   font-family: var(--primary-font);
   color: var(--primary-color);
   font-size: 0.9rem;
-  cursor: none;
+  /* cursor: none; */
 }
 
 /* Encontre-nos */

@@ -1,5 +1,5 @@
-const canvas = document.getElementById("canvas");
-const context = canvas.getContext("2d");
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
 
 let rectangles = [];
 let esp = 0;
@@ -10,7 +10,7 @@ var mouseX = 0;
 var mouseY = 0;
 
 //Event Listeners
-window.addEventListener("mousemove", function(e) {
+window.addEventListener('mousemove', function (e) {
   //   console.log(e.clientY);
   mouseX = e.clientX;
   mouseY = e.clientY;
@@ -32,7 +32,7 @@ class Rectangle {
 
   drawRect = () => {
     let y = canvas.height - this.h;
-    context.fillStyle = "#FFFFFF";
+    context.fillStyle = '#FFFFFF';
     context.fillRect(this.x, y, this.w, this.h);
   };
 
@@ -120,23 +120,16 @@ const updateSize = () => {
   }
 };
 
-//Cursor
-const cursor = document.querySelector(".cursor");
+// //Cursor
+// const cursor = document.querySelector('.cursor');
 
-document.addEventListener("mousemove", e => {
-  cursor.setAttribute(
-    "style",
-    "top: " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px"
-  );
-});
+// document.addEventListener('click', () => {
+//   cursor.classList.add('expand');
 
-document.addEventListener("click", () => {
-  cursor.classList.add("expand");
-
-  setTimeout(() => {
-    cursor.classList.remove("expand");
-  }, 500);
-});
+//   setTimeout(() => {
+//     cursor.classList.remove('expand');
+//   }, 500);
+// });
 
 //Função de update
 const update = () => {
@@ -146,6 +139,13 @@ const update = () => {
 };
 
 update();
+
+// document.addEventListener('mousemove', (e) => {
+//   cursor.setAttribute(
+//     'style',
+//     'top: ' + (e.pageY - 15) + 'px; left: ' + (e.pageX - 15) + 'px'
+//   );
+// });
 
 // setInterval(function() {
 //   console.log(esp);
